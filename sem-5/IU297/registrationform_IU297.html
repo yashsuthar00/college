@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title> registration form with validations </title>
+	</head>
+	<body>
+		<h2>registration form using JS</h2>
+		<table border="1">
+			<tr>
+				<td>name</td>
+				<td><p id="demo1"><input type="text" id="name"> </p></td>
+			</tr>
+			<tr>
+				<td>mobile</td>
+				<td><input type="text" id="mobile"><p id="demo1"> </p></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" id="email"></td>
+			</tr>
+			<tr>
+				<td>DOB</td>
+				<td><input type="date" id="date"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="text" id="Gender"></td>
+			</tr>
+			<tr>
+				<td>password</td>
+				<td><input type="text" id="password"></td>
+			</tr>
+			<tr>
+				<td>Re-password</td>
+				<td><input type="text" id="Re-password"></td>
+			</tr>
+		</table>
+		
+		<button onclick="myfunction()" type="button">CHECK</button>
+
+		<script>
+			function myfunction(){
+
+				let name = document.getElementById("name").value;
+				var letter = /^[A-Za-z]+$/;
+				
+
+				if(name.length == 0)
+				{
+					document.getElementById("demo1").innerHTML = "Insert text";
+				
+				if(name.match(letter))
+				{
+				
+				}
+				else
+				{
+					document.getElementById("demo1").innerHTML = "text is not valid";	
+				}
+				}
+			}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Enter Key Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="MyController">
+    <input type="text" ng-model="searchQuery" ng-keyup="searchOnEnter($event)" placeholder="Search and press Enter">
+    <div>
+        <h3>Search Result:</h3>
+        <p>{{ searchResult }}</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

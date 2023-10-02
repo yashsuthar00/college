@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+    <title> JavaScript Calc. IU2141230297 </title>
+
+    <style>
+        .container{
+            width: 20%;
+        }
+        .formstyle{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .form{
+            background-color: grey;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h2 align="center">JavaScript calculator </h2>
+            <div class = "formstyle">
+                <form class="form" name = "display" align="center">
+                    <input id = "calc" type ="text" name = "answer"> <br> <br>
+                    <input type = "button" value = "1" onclick = "display.answer.value += '1' ">
+                    <input type = "button" value = "2" onclick = "display.answer.value += '2' ">
+                    <input type = "button" value = "3" onclick = "display.answer.value += '3' ">
+                    <input type = "button" value = "+" onclick = "display.answer.value += '+' ">
+                    <br> <br>
+                    <input type = "button" value = "4" onclick = "display.answer.value += '4' ">
+                    <input type = "button" value = "5" onclick = "display.answer.value += '5' ">
+                    <input type = "button" value = "6" onclick = "display.answer.value += '6' ">
+                    <input type = "button" value = "-" onclick = "display.answer.value += '-' ">
+                    <br> <br>
+                    <input type = "button" value = "7" onclick = "display.answer.value += '7' ">
+                    <input type = "button" value = "8" onclick = "display.answer.value += '8' ">
+                    <input type = "button" value = "9" onclick = "display.answer.value += '9' ">
+                    <input type = "button" value = "*" onclick = "display.answer.value += '*' ">
+                    <br> <br>
+
+                    <input type = "button" value = "/" onclick = "display.answer.value += '/' ">
+                    <input type = "button" value = "0" onclick = "display.answer.value += '0' ">
+                    <input type = "button" value = "." onclick = "display.answer.value += '.' ">
+                    <input type = "button" value = "=" onclick = "display.answer.value = eval(display.answer.value)">
+                    <br> <br>
+                    <input type = "button" value = "CLEAR ALL" onclick = "display.answer.value = ' ' " id= "clear" >
+                    <br>
+                </form>
+            </div>
+        </div>
+        <script>
+        function display(x)
+        {
+        calc.text.value=calc.text.value+x;
+        document.getElementById("result").value+=value;
+        }
+        </script>
+    </body>
+</html>

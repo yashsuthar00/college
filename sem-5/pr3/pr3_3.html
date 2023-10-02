@@ -1,0 +1,30 @@
+<html>
+
+    <head>
+        <title>Practical-3-3</title>
+    </head>
+
+    <body>
+
+        Enter a number : <input type="number" id="num">
+
+        <button onclick="func()">Check</button>
+        <p>Solution : </p>
+        <p id="demo"></p>
+
+        <script>
+            function func()
+            {
+                var num=parseInt(document.getElementById("num").value);
+                var power;
+                power=num%10;
+                var base;
+                base=parseInt(num/10);
+                var sol;
+                sol=base**power;
+                document.getElementById("demo").innerHTML=sol;
+            }
+        </script>
+
+    </body>
+</html>

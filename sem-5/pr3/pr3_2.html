@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Pr-3.2 IU2141230297</title>
+
+        <style>
+            .container{
+                display: flex;
+                width: 40%;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="container1">
+            
+                <h4>Enter sides of the rectangle: </h4>
+                Enter Length: <input type="number" id="length"> <br>
+                Enter breadth: <input type="number" id="breadth"> <br> <br>
+
+                <h4>Area of Rectangle: </h4>
+                <p id="area-rectangle"></p>
+
+            </div>
+            <div class="container2">
+                <h4>Enter sides of triangle: </h4>
+                Enter base: <input type="number" id="base"><br>
+                Enter height: <input type="number" id="height"> <br> <br>
+
+                <h4>Area of Triangle: </h4>
+            <p id="area-triangle"></p>
+            </div>
+        </div>
+        
+        <button onclick="func()">CHECK</button>
+
+        <script>
+            function func(){
+                var length = parseInt(document.getElementById("length").value);
+                var breadth = parseInt(document.getElementById("breadth").value);
+
+                var base = parseInt(document.getElementById("base").value);
+                var height = parseInt(document.getElementById("height").value);
+
+                var rectangle_area;
+                rectangle_area = length * breadth;
+
+                document.getElementById("area-rectangle").innerHTML = rectangle_area;
+
+                var triangle_area;
+                triangle_area = 0.5 * base * height;
+
+                document.getElementById("area-triangle").innerHTML = triangle_area;
+            }
+        </script>
+        
+    </body>
+
+</html>

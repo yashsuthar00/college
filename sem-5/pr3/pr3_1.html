@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+        <title> basic calculator by javascript IU2141230297</title>
+    </head>
+
+    <body>
+        <h1>Calculator</h1>
+
+        Number1: <input type="number" id="num1"> <br> <br>
+        Number2: <input type="number" id="num2"> <br> <br>
+
+        <select name="opr" id="opr">
+            <option value="">select opration</option>
+            <option value="1">Addition</option>
+            <option value="2">Substration</option>
+            <option value="3">Multiplication</option>
+            <option value="4">Division</option>
+        </select>
+        
+        <br> <br>
+        
+        <button onclick="calc()">CHECK</button>
+
+        <h3>Answer: </h3>
+        <h3 id="demo"></h3>
+
+        <script>
+            function calc(){
+                var n1 = parseInt(document.getElementById("num1").value);
+                var n2 = parseInt(document.getElementById("num2").value);
+                var opr_value = parseInt(document.getElementById("opr").value);
+                var ans;
+
+                if(opr_value==1){
+                    ans=n1+n2;
+                }
+                else if(opr_value==2){
+                    ans=n1-n2;
+                }
+                else if(opr_value==3){
+                    ans=n1*n2;
+                }
+                else if(opr_value==4){
+                    ans=n1/n2;
+                }
+                else{
+                    ans="invalid"
+                }
+                document.getElementById("demo").innerHTML = ans;
+            }
+        </script>
+
+    </body>
+
+</html>
