@@ -61,7 +61,7 @@ int main()
         printf("Enter a : ");
         scanf("%d",&a[i]);
     }
-    
+
     printf("Quick Sort : \n");
     printf("Array before Sorting: \n");
     array_op(a, n);
