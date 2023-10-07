@@ -1,4 +1,7 @@
-    <?php
+<!-- PHP based web application to understand data retrieval on server side -->
+
+
+<?php
         $servername = "localhost";
         $username = "root";
         $password = "";
